@@ -1,0 +1,173 @@
+.modal-header {
+    background-color: rgb(0, 123, 255);
+    border: 1px solid rgb(0, 123, 255, 0.8);
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.modal-header .nav-tabs{
+    float: left;
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    border-bottom-color: transparent;
+}
+.modal-header .nav-tabs > li {
+    float: left;
+    border-bottom-color: transparent;
+    margin-right: 2px;
+}
+/* 설정 탭 기본 설정 */
+.modal-header .nav-tabs > li > a {
+    float: left;
+    line-height: 1.42857143;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+/* 설정탭에 마우스 hover했을때 */
+.modal-header .nav-tabs > li > a:hover {
+    color: #495057;
+    background-color: #f9f9f9;
+    border-bottom-color: transparent;
+}
+.nav-tabs .nav-link {
+    border: transparent;
+}
+/* 설정탭에 클릭했을때 */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    /* color: #007bff; */
+    background-color: #f9f9f9;
+    border-color: transparent;
+    border-bottom: none;
+}
+/* 설정탭에 클릭했을때 a css */
+.modal-header .nav-tabs > li > a.active > a {
+    color: #f9f9f9;
+    cursor: default;
+    background-color: #007bff;
+    border-bottom-color: transparent;
+}
+/* 설정탭에 클릭후 다시 같은 곳에 hover했을때 */
+.modal-header .nav-tabs > li > a.active > a:hover {
+    color: #007bff;
+    background-color: #f9f9f9;
+    cursor: default;
+    border-bottom-color: transparent;
+}
+/* 설정탭에 클릭후 다시 같은 곳에 클릭했을때 */
+.modal-header .nav-tabs > li > a.active > a:focus {
+    color: #007bff;
+    background-color: #f9f9f9;
+    cursor: default;
+    border-bottom-color: transparent;
+}
+
+.modal-header .close {
+    padding: 0.4rem 0.5rem;
+}
+
+.close{
+    color: #f9f9f9;
+    text-shadow: none;
+}
+
+.container--tabs .tab-content {
+    float: left;
+    width: 100%;
+}
+.container--tabs .tab-content > .tab-pane {
+    display: none;
+}
+.container--tabs .tab-content > .tab-pane.active {
+    display: block;
+    padding: 0% 3.5%;
+    background-color: #f9f9f9;
+}
+.container--tabs .tab-content > .active {
+    display: block;
+}
+
+#settingButton{   
+    float: right;
+    margin-right: 10px;
+    margin-top: 45px;
+}
+#settingButtonSub{
+    float: right;
+    margin-right: 20px;
+    margin-top: 45px;
+}
+/* settings tab/content */
+#modalContent {
+    background-color:#f9f9f9;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border: none;
+    color: #5e5e5e;
+}
+#subModalContent {
+    background-color: #f9f9f9;
+    border: none;
+    color: #5e5e5e;
+}
+#settingsAbout, #settingsInfo, #settings, #settingsBG, #settingsLove {
+    background-color: transparent;
+}
+
+.modal-footer {
+    justify-content: center;
+    border-top: transparent;
+    padding: 0.5rem;
+}
+
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 250px;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* settings layout */
+hr {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.settingsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+.settingsTitle {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+#modalContent {
+    min-width: 471px;
+}
+#subModalContent {
+    min-width: 471px;
+}
+.modal-header {
+    min-width: 471px;
+}
+#modalBody {
+    min-width: 471px;
+}
+#subModalBody{
+    min-width: 471px;
+    overflow-y: overlay; 
+}
+#modalFooter {
+    min-width: 471px;
+}

@@ -1,0 +1,146 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.content {
+    display: flex;
+    width: 45vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3rem;
+
+    position: relative;
+    margin: 1rem;
+    overflow: hidden;
+}
+.content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out 0s;
+}
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+.content-details span{
+  color: #eeeeee;
+  font-weight: 500;
+}
+
+.fadeIn-bottom{
+    top: 60%;
+}
+
+.content-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+#title{
+    font-size: 5vw;
+}
+#leftCount{
+    font-size: 8vw;
+}
+#leftCount.index10 {
+    font-size: 5vw;
+}
+#rightCount, #title {
+    width: 100%;
+    font-size: 4vw;
+}
+#textBottom {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (max-height: 280px) {
+    body{
+        height: 280px;
+        overflow-y: hidden;
+    }
+}
+@media (max-width: 272px) {
+    body{
+        height: 400px;
+        margin: auto;
+        overflow-y: hidden;
+    }
+    .container{
+        height: 100%;
+        flex-direction: column !important;
+        justify-content: space-evenly;
+    }
+    .content{
+        width: 90vw;
+        justify-content: center !important;        
+    }
+    .content-image{
+        height: 100%;
+        width: 100%;
+    }
+    #remainContent {
+        height: 45%;
+    }
+    #textBottom {
+        height: 35% !important;
+        width: 100%;
+        font-size: 9vw;
+        margin-top: -10%;
+    }
+    #title {
+        font-size: 8vw;
+    }
+    #leftCount{
+        font-size: 16vw;    
+    }
+    #leftCount.index10{
+        font-size: 14vw;
+    }
+    #rightCount {
+        width: 100%;
+        font-size: 100%;
+    }
+}

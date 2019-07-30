@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Main Item3</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/style_layout.css">
+        <link rel="stylesheet" href="css/style_headerItem.css"> 
+        <link rel="stylesheet" href="css/style_mainContainer.css">
+        <link rel="stylesheet" href="css/style_mainItem3.css">
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="manifest" href="manifest.json">
+
+    </head>
+
+    <body class="animated fadeIn gamja font-color">
+        <div id="pageContent" class="flexCol centerV">
+            <div id="topBox" class="flexCol centerH">
+                <div id="relationshipInfo" class="flexCol centerV animated fadeIn">
+                    <div id="nameBox" class="flexRow centerV">
+                        <div id="userName"></div>
+                        <image src="/img/heart.png" style="height: 8vw">
+                        <div id="loverName"></div>
+                    </div>
+                </div>
+
+                <div id="relationshipInfoBack" class="flexRow centerH centerV animated fadeIn">
+                    <div id="daysTogether" class="main3box flexCol centerH centerV">
+                        <div class="boxTitle">
+                            우리 이제 사귄지
+                        </div>
+                        <div class="boxContent">
+                            <span id="daysInRel"></span>
+                        </div>
+                    </div>
+                    <div id="relDaysInMil" class="main3box flexCol centerH centerV">
+                        <div class="boxTitle">
+                            군화 & 곰신된지
+                        </div>
+                        <div class="boxContent">
+                            <span id="waitDaysCount"></span>
+                        </div>
+                    </div>
+                    <div id="daysToDischarge" class="main3box flexCol centerH centerV">
+                        <div class="boxTitle">
+                            꽃신까지
+                        </div>
+                        <div class="boxContent">
+                            <span id="leftDaysCount"></span>
+                        </div>
+                    </div>
+                    <div id="daysToNextAnni" class="main3box flexCol centerH centerV">
+                        <div id = "anniversaryDate"></div>
+                        <div class="boxTitle">
+                            <span id="nextAnni"></span>
+                        </div>
+                        <div class="boxContent">
+                            <span id="numDaysToNextAnni"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottomBox">
+                <div id="betweenPic1" class="coupleImg flexCol centerV content" data-toggle="modal" data-target="#picModal" data-backdrop="false" data-keyboard="true">
+                    <div class="content-overlay"></div>
+                    <img id="withGF1" class="content-image">
+                    <img class = "frame">
+                    <div class="content-details">
+                        <div class="content-icon">
+                            <i id="icon1" class="fa fa-exchange fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="betweenPic2" class="coupleImg flexCol centerV content" data-toggle="modal" data-target="#picModal" data-backdrop="false" data-keyboard="true">
+                    <div class="content-overlay"></div>
+                    <img id="withGF2" class="content-image">
+                    <img class = "frame">
+                    <div class="content-details">
+                        <div class="content-icon">
+                            <i id="icon2" class="fa fa-exchange fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+                <div id="betweenPic3" class="coupleImg flexCol centerV content" data-toggle="modal" data-target="#picModal" data-backdrop="false" data-keyboard="true">
+                    <div class="content-overlay"></div>
+                    <img id="withGF3" class="content-image">
+                    <img class = "frame">
+                    <div class="content-details">
+                        <div class="content-icon">
+                            <i id="icon3" class="fa fa-exchange fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mainModal">
+                <div class="modal fade bd-example-modal-sm" id="picModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="height: 100%">
+                    <div class="modal-dialog modal-dialog-centered" role="document" style="height: 90%">
+                        <div id="modalContent" class="modal-content" style="height: 70%">
+                            <div class="modal-header">
+                                <h3>이미지 업로드</h3>
+                                <button id="closeImgUpload" type="button" class="close" data-dismiss="modal" aria-label="Close" style="outline: none">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+    
+                            <div id="modalBody" class="modal-body flexCol centerH">
+
+                                <div style="color: gray; font-size: 0.8rem;">
+                                    사진이 회전되어 업로드 될 경우, 파일을 회전시켜 저장 후 다시 업로드해주세요.
+                                </div><br>
+
+                                <div class="flexRow centerV spaceAround" style="width: 70%">
+                                
+                                    <div class="flexRow centerV" style="width: 100%;">
+                                        <div class="flexCol centerH">
+                                            <label id="fileUploadButton1" class="btn btn-info">
+                                                <div>
+                                                    <i class="fa fa-camera-retro fa-2x"></i>
+                                                    <input type="file" id="imgUpload1" class="imgUpload1" capture>
+                                                </div>
+                                                <div id="close1">
+                                                    <i id="x1" class="fa fa-minus-circle"></i>
+                                                </div>
+                                                <div id="status1">
+                                                    <i id="check1" class="uploadStatus fa fa-check-circle"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="flexRow centerV" style="width: 100%;">
+                                        <div class="flexCol centerH">
+                                            <label id="fileUploadButton2" class="btn btn-info">
+                                                <div>
+                                                    <i class="fa fa-camera-retro fa-2x"></i>
+                                                    <input type="file" id="imgUpload2" capture>
+                                                </div>
+                                                <div id="close2">
+                                                    <i id="x2" class="fa fa-minus-circle"></i>
+                                                </div>
+                                                <div id="status2">
+                                                    <i id="check2" class="uploadStatus fa fa-check-circle"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="flexRow centerV" style="width: 100%;">
+                                        <div class="flexCol centerH">
+                                            <label id="fileUploadButton3" class="btn btn-info">
+                                                <div>
+                                                    <i class="fa fa-camera-retro fa-2x"></i>
+                                                    <input type="file" id="imgUpload3" capture>
+                                                </div>
+                                                <div id="close3">
+                                                    <i id="x3" class="fa fa-minus-circle"></i>
+                                                </div>
+                                                <div id="status3">
+                                                    <i id="check3" class="uploadStatus fa fa-check-circle"></i>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div><br>
+                                
+                                <div class="flexRow spaceAround centerV" style="width: 80%">
+                                    <button id="imgSave" class="imgSetting btn btn-primary">저장</button>
+                                    <button id="imgRevert" class="imgSetting btn btn-secondary">복구</button>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="js/mainItem3.js"></script>
+        <script src="js/overIframe.js"></script>
+        <script type="text/javascript" src="js/changeTheme.js"></script>
+
+    </body> 
+</html>

@@ -1,0 +1,442 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    overflow: hidden;
+}
+.font-color {
+    color: white;
+}
+
+#withGF:hover, #anniversaryImg:hover {
+    transform: scale(1.01);
+}
+
+#waitDaysBox, #leftDaysBox {
+    font-size: 3vw;
+}
+#dateBox, #infoBox :hover, #anniversaryImg:hover {
+    cursor: pointer;
+}
+
+#anniversaryImg{
+    height: 18vh;
+}
+
+#userName, #loverName {
+    font-size: 6vw;
+}
+#celebrateAnn {
+    font-size: 4vw;
+}
+
+/* layout */
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+.centerH {
+    align-items: center;
+}
+.centerV {
+    justify-content: center;
+}
+.spaceBetween {
+    justify-content: space-between;
+}
+.spaceAround {
+    justify-content: space-around;
+}
+
+#pageContent {
+    width: 100%;
+    height: 100%;
+}
+#topBox {
+    width: 100%;
+    height: 20%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+#relationshipInfo, #progressAnniversary {
+    width: 50%;
+    height: 100%;
+}
+#relationshipInfo:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+#nameBox {
+    width: 100%;
+    height: 100%;;
+    justify-content: space-around;
+}
+#dateBox, #infoBox {
+    width: 100%;
+    height: 100%;
+}
+#dateBox {
+    font-size: 10vw;
+}
+#waitDaysBox, #leftDaysBox {
+    width: 100%;
+    height: 50%;
+}
+
+#relationshipInfoBack {
+    width: 100%;
+    height: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: none;
+}
+#relationshipInfoBack:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.main3box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100%;   
+    line-height: 1;
+}
+.boxContent {
+    font-size: 1.5rem;
+}
+#daysTogether {
+    background-color: #fbcabb;
+    border-top-left-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+}
+#relDaysInMil {
+    background-color: #f9b0c3;
+}
+#daysToDischarge {
+    background-color: #e3abce;
+}
+#daysToNextAnni {
+    background-color: #ceb6d9;
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+}
+
+#bottomBox {
+    width: 100%;
+    height: 65%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#anniversaryDate {
+    width: 100%;
+}
+#lastAnniversary{
+    width: 20%;
+    height:100%;
+}
+#nextAnniversary {
+    width: 20%;
+    height: 100%;
+}
+.coupleImg {
+    height: 100%;
+    width: 30%;
+}
+.coupleImg:hover {
+    cursor: pointer;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 101;
+}
+#withGF1, #withGF2, #withGF3 {
+    width: 100%;
+    height: 80%;
+    border-radius: 1rem;
+    position: relative;
+    margin-bottom: 20%;
+}
+#withGF1:hover, #withGF2:hover, #withGF3:hover {
+    transform: scale(1.05);
+}
+hr {
+    margin: 0;
+    border-top-color: rgb(210, 210, 210);
+}
+.fa-check-circle {
+    color: green;
+    background-color: white;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+.fa-times {
+    color: white;
+    font-size: .8rem;
+    margin: auto;
+    z-index: 100;
+}
+.fa-minus-circle {
+    color: rgb(250, 108, 108);
+    background-color: white;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+.fa-circle {
+    color: gray;
+}
+#close1:hover, #close2:hover, #close3:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: rgb(90, 90, 90);
+}
+.fa-undo {
+    color: white;
+    font-size: 0.9rem;
+}
+.fa-undo:hover, .fa-camera-retro:hover {
+    cursor: pointer;
+    color: rgb(196, 196, 196);
+}
+.imgSetting {
+    width: 45%;
+}
+.uploadStatus {
+    visibility: hidden;
+    margin-bottom: 0.2rem;
+}
+
+/* modal css */
+#picModal {
+    overflow:hidden;
+}
+#modalContent {
+    box-shadow: 0px 0px 1rem black;
+}
+#modalBody, #modalContent {
+    border: none;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+#modalBody {
+    padding: 1rem;
+}
+.modal-header {
+    background-color: rgb(0, 123, 255);
+    border: 1px solid rgb(0, 123, 255, 0.8);
+    padding-bottom: 0;
+    color: white;
+}
+
+#imgUpload1, #imgUpload2, #imgUpload3 {
+    display: none;
+}
+.modal-header .close {
+    padding: 0.4rem 0.5rem;
+}
+.close{
+    color: white;
+    text-shadow: none;
+}
+#modalContent {
+    background-color: #F8F8FF;
+    border: none;
+    height: 30%;
+    width: 80%;
+    margin: auto;
+}
+#fileUploadButton1, #fileUploadButton2, #fileUploadButton3 {
+    margin: .2rem;
+    padding: .3rem;
+    position: relative;
+}
+#close1, #close2, #close3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -.5rem;
+    margin-right: -.5rem;
+}
+#status1, #status2, #status3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -.5rem;
+    margin-left: -.5rem;
+}
+
+/* overlay effect */
+.content {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;  
+    position: relative;
+    overflow: hidden;
+}
+.content .content-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 100;
+    transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay{
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out 0s;
+    z-index: 102;
+}
+.content:hover .content-details{
+    top: 45%;
+    left: 50%;
+    opacity: 1;
+}
+.content-details .content-title{
+    color: #eeeeee;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.content-icon > a > i {
+    color: #eeeeee;
+}
+.content-icon > a > i:hover {
+    color: #007bff;
+}
+  
+.content-icon-settings {
+    display: flex;
+    align-items: center;
+}
+.content-icon-settings > a {
+    text-decoration: none;
+}
+  
+.fadeIn-bottom{
+    top: 60%;
+}
+
+@media (max-height: 280px) {
+    body{
+        height: 280px;
+        overflow-y: hidden;
+    }
+}
+@media (max-width: 272px) {
+    body{
+        height: 400px;
+        overflow-y: hidden;
+        margin: auto;
+    }
+    #pageContent{
+        width: 100% !important;
+        height: 100%;    
+        justify-content: center;  
+    }
+    #topBox{
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        justify-content: space-evenly;
+    }    
+    #middleBox {
+        flex-direction: column;
+        height: 60%;
+        width: 100%;
+    }
+    #middleLeft, #middleRight {
+        width: 100%;
+        height: 50%;
+    }
+    #relationshipInfo{          
+        display: flex !important;
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+    }
+    #relationshipInfoBack {
+        display: flex !important;
+        flex-direction: column;
+        height: 60%;
+    }
+    #relationshipInfo:hover, #relationshipInfoBack:hover {
+        cursor: default !important;
+        transform: none !important;
+    }
+
+    .main3box{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    #userName, #loverName {
+        font-size: 10vh;
+    }
+    #dateBox{
+        font-size: 25vw;
+    }
+    #waitDaysBox, #leftDaysBox{
+        font-size: 8vw;
+    }
+    #bottomBox {
+        display: none;
+    }
+    #modalContent {
+        width: 100%;
+    }
+
+    #daysTogether {
+        border-bottom-left-radius : 0rem;
+        border-top-right-radius: 0.3rem;
+    }
+    #daysToNextAnni {
+        border-top-right-radius: 0rem;
+        border-bottom-left-radius: 0.3rem;
+    }
+    .boxTitle{
+        font-size: 7vw;
+    }
+    .boxContent{
+        font-size: 7vw;
+    }
+}

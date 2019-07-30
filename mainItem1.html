@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  
+    <head>
+        <meta charset="utf-8">
+        <title>Main Item1</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="stylesheet" href="css/style_layout.css">        
+        <link rel="stylesheet" href="css/style_headerItem.css"> 
+        <link rel="stylesheet" href="css/style_mainContainer.css">
+        <link rel="stylesheet" href="css/style_mainItem1.css">
+
+        <link rel="manifest" href="manifest.json">
+    </head>
+
+    <body style="background-color: rgba(80, 24, 24, 0)" class="gamja font-color animated fadeIn">        
+        <div id="box" class="flexRow centerH centerV">
+            <div id="leftBox" class="flexRow centerH centerV" style="width: 40%;"> 
+                <button id="toRankSettingsButton" class="btn btn-primary rankSettings" style="display: none;">계급 설정</button>
+                <img id ="profPicUser" class="rankImg animated fadeIn">
+                <div id="moreInfo" class="flexCol" style="display: none">
+                    <div class="flexRow centerV spaceAround">
+                        <span>전체 복무일:</span>&nbsp;
+                        <span id="li_wholeDays"></span>
+                    </div>
+                    <div class="flexRow centerV spaceAround">
+                        <span>단축 복무일:</span>&nbsp;
+                        <span id="li_reducedDays"></span>
+                    </div>
+                    <div class="flexRow centerV spaceAround">
+                        <span>현재 복무일:</span>&nbsp;
+                        <span id="li_doneDays"></span>
+                    </div>
+                    <div class="flexRow centerV spaceAround">
+                        <span>남은 복무일:</span>&nbsp;
+                        <span id="li_todoDays"></span>
+                    </div>
+                </div>
+            </div>
+            <div id="rightBox" class="flexCol centerH centeV" style="width: 45%">
+                <div id="topBox" class="flexCol centerH centerV">
+                    <div id="nameDisplay"></div>
+                    <div id="endDateDisplay"></div>
+                    <div id="dDayDisplay" class="jua animated rubberBand"></div>
+                    <div id="dDayDisplayBack" class="flexCol centerH centerV animated fadeIn" style="display: none;">
+                        <div id="timeRemaining"></div>
+                        <div id="timeSlotArea" class="flexRow" style="align-items: baseline">
+                            <div class="font-color fitBGborder timeSlot"><span id="minute1" class="majorMono"></span></div>
+                            <div class="font-color fitBGborder timeSlot"><span id="minute2" class="majorMono"></span></div>분
+                            <div class="font-color fitBGborder timeSlot" ><span id="second1" class="majorMono"></span></div>
+                            <div class="font-color fitBGborder timeSlot"><span id="second2" class="majorMono"></span></div>초
+                        </div>
+                    </div>
+                </div>
+                <div id="bottomBox">
+                    <div id="progress" class="progress" data-toggle="popover">
+                        <div id="progressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+        
+                    <div id="percentageDiv" class="majorMono animated fadeInUp"></div>
+                    <div id="msgDateOf" class="animated bounce font-color gamja"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="js/mainItem1.js"></script>
+        <script src="js/overIframe.js"></script>
+        <script type="text/javascript" src="js/changeTheme.js"></script>
+
+    </body> 
+</html>
